@@ -1,0 +1,9 @@
+node_modules
+fastlane/report.xml
+Pods
+Pods/Pods.xcodeproj/xcuserdata
+RxPlayground.xcodeproj/xcuserdata
+RxPlayground.xcworkspace/xcuserdata
+.DS_Store
+*.ipa
+*.zip

@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042DE8D922025768001AD063 /* MessageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DE8D822025768001AD063 /* MessageTableView.swift */; };
+		042DE8DB220257B2001AD063 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DE8DA220257B2001AD063 /* MessageTableViewCell.swift */; };
+		042DE8DD220257D0001AD063 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DE8DC220257D0001AD063 /* Message.swift */; };
+		042DE8DF220257F1001AD063 /* MessageSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DE8DE220257F1001AD063 /* MessageSection.swift */; };
 		0465B79622023949008DE746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465B79522023949008DE746 /* AppDelegate.swift */; };
-		0465B79822023949008DE746 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465B79722023949008DE746 /* ViewController.swift */; };
-		0465B79B22023949008DE746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0465B79922023949008DE746 /* Main.storyboard */; };
+		0465B79822023949008DE746 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465B79722023949008DE746 /* MessageViewController.swift */; };
 		0465B79D2202394A008DE746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465B79C2202394A008DE746 /* Assets.xcassets */; };
 		0465B7A02202394A008DE746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0465B79E2202394A008DE746 /* LaunchScreen.storyboard */; };
+		77F646510C946C8445F121E2 /* Pods_RxPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657E2287FE1EEF58B89A86A /* Pods_RxPlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042DE8D822025768001AD063 /* MessageTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableView.swift; sourceTree = "<group>"; };
+		042DE8DA220257B2001AD063 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		042DE8DC220257D0001AD063 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		042DE8DE220257F1001AD063 /* MessageSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSection.swift; sourceTree = "<group>"; };
 		0465B79222023949008DE746 /* RxPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0465B79522023949008DE746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0465B79722023949008DE746 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0465B79A22023949008DE746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0465B79722023949008DE746 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		0465B79C2202394A008DE746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0465B79F2202394A008DE746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0465B7A12202394A008DE746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5657E2287FE1EEF58B89A86A /* Pods_RxPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76DC05DD0F23E592CAB3728F /* Pods-RxPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPlayground/Pods-RxPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		B557263917CF7BD75FEB8AE6 /* Pods-RxPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPlayground/Pods-RxPlayground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F646510C946C8445F121E2 /* Pods_RxPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042DE8D6220256A3001AD063 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				042DE8D7220256AB001AD063 /* Message */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		042DE8D7220256AB001AD063 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0465B79722023949008DE746 /* MessageViewController.swift */,
+				042DE8D822025768001AD063 /* MessageTableView.swift */,
+				042DE8DA220257B2001AD063 /* MessageTableViewCell.swift */,
+				042DE8DC220257D0001AD063 /* Message.swift */,
+				042DE8DE220257F1001AD063 /* MessageSection.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		0465B78922023949008DE746 = {
 			isa = PBXGroup;
 			children = (
 				0465B79422023949008DE746 /* RxPlayground */,
 				0465B79322023949008DE746 /* Products */,
+				FCF497011506A82592A10CCC /* Pods */,
+				62E983590DD1F8231227CA09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +87,30 @@
 		0465B79422023949008DE746 /* RxPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				042DE8D6220256A3001AD063 /* Playgrounds */,
 				0465B79522023949008DE746 /* AppDelegate.swift */,
-				0465B79722023949008DE746 /* ViewController.swift */,
-				0465B79922023949008DE746 /* Main.storyboard */,
 				0465B79C2202394A008DE746 /* Assets.xcassets */,
 				0465B79E2202394A008DE746 /* LaunchScreen.storyboard */,
 				0465B7A12202394A008DE746 /* Info.plist */,
 			);
 			path = RxPlayground;
+			sourceTree = "<group>";
+		};
+		62E983590DD1F8231227CA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5657E2287FE1EEF58B89A86A /* Pods_RxPlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCF497011506A82592A10CCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76DC05DD0F23E592CAB3728F /* Pods-RxPlayground.debug.xcconfig */,
+				B557263917CF7BD75FEB8AE6 /* Pods-RxPlayground.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0465B7A42202394A008DE746 /* Build configuration list for PBXNativeTarget "RxPlayground" */;
 			buildPhases = (
+				14F7A803254E3F13763AD598 /* [CP] Check Pods Manifest.lock */,
 				0465B78E22023949008DE746 /* Sources */,
 				0465B78F22023949008DE746 /* Frameworks */,
 				0465B79022023949008DE746 /* Resources */,
+				C28C04832586B09CA492DE20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +175,77 @@
 			files = (
 				0465B7A02202394A008DE746 /* LaunchScreen.storyboard in Resources */,
 				0465B79D2202394A008DE746 /* Assets.xcassets in Resources */,
-				0465B79B22023949008DE746 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F7A803254E3F13763AD598 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28C04832586B09CA492DE20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxPlayground/Pods-RxPlayground-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPlayground/Pods-RxPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0465B78E22023949008DE746 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0465B79822023949008DE746 /* ViewController.swift in Sources */,
+				0465B79822023949008DE746 /* MessageViewController.swift in Sources */,
+				042DE8DB220257B2001AD063 /* MessageTableViewCell.swift in Sources */,
+				042DE8DD220257D0001AD063 /* Message.swift in Sources */,
+				042DE8DF220257F1001AD063 /* MessageSection.swift in Sources */,
 				0465B79622023949008DE746 /* AppDelegate.swift in Sources */,
+				042DE8D922025768001AD063 /* MessageTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0465B79922023949008DE746 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0465B79A22023949008DE746 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0465B79E2202394A008DE746 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +375,7 @@
 		};
 		0465B7A52202394A008DE746 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76DC05DD0F23E592CAB3728F /* Pods-RxPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +394,7 @@
 		};
 		0465B7A62202394A008DE746 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B557263917CF7BD75FEB8AE6 /* Pods-RxPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
